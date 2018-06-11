@@ -1,0 +1,23 @@
+server:
+ port: 9000
+spring:
+ application:
+  name: eureka-server
+
+eureka:
+ instance:
+  hostname: localhost
+ client:
+  register-with-eureka: false
+  fetch-registry: false
+  service-url:
+   defaultZone: http://khum:khum123456@localhost:9000/eureka   
+# 安全的注册地址
+
+# 登陆后台的安全认证配置	
+security:  
+ basic:  
+  enabled: true  
+ user:  
+  name: khum
+  password: khum123456
